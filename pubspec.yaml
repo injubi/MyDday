@@ -72,7 +72,10 @@ flutter:
           weight: 500
         - asset: asset/font/Sunflower-Bold.ttf
           weight: 700
-
+    - family: pretendard
+      fonts:
+        - asset: asset/font/PretendardVariable.ttf
+          weight: 600
 
   # To add assets to your application, add an assets section, like this:
   # assets:

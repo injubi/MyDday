@@ -6,29 +6,30 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: 'sunflower',
+        fontFamily: 'pretendard',
         textTheme: TextTheme(
-          headline1: TextStyle(
+          displayLarge: TextStyle(
             color: Colors.white,
-            fontFamily: 'parisienne',
+            fontFamily: 'pretendard',
             fontSize: 80.0,
           ),
-          headline2: TextStyle(
+          displayMedium: TextStyle(
             color: Colors.white,
-            fontSize: 50.0,
-            fontWeight: FontWeight.w700,
-          ),
-          bodyText1: TextStyle(
-            color: Colors.white,
+            fontFamily: 'pretendard',
             fontSize: 30.0,
           ),
-          bodyText2: TextStyle(
+          displaySmall: TextStyle(
             color: Colors.white,
+            fontFamily: 'pretendard',
             fontSize: 20.0,
           ),
         ),
       ),
-      home: HomeScreen(),
+      home: Container(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("asset/img/sky.jpg"), fit: BoxFit.cover)),
+          child: HomeScreen()),
     ),
   );
 }
